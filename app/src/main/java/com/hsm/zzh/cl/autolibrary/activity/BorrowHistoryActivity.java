@@ -31,6 +31,7 @@ public class BorrowHistoryActivity extends AppCompatActivity {
     private RecyclerView hRecyclerView;
     private HistoryAdapter historyAdapter;
     private List<Book> hbList=new ArrayList<>();
+    private BmobUser myUser = BmobUser.getCurrentUser(MyUser.class);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +42,7 @@ public class BorrowHistoryActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setTitle("借阅记录");
+            actionBar.setTitle("");
         }
 
         hRecyclerView = (RecyclerView) findViewById(R.id.history_recycler_view);
@@ -51,7 +52,7 @@ public class BorrowHistoryActivity extends AppCompatActivity {
     }
 
     private void getBorrowHistory() {
-        MyUser myUser = BmobUser.getCurrentUser(MyUser.class);
+        final MyUser myUser = BmobUser.getCurrentUser(MyUser.class);
         if (myUser != null) {
             Log.d("myuserhistory", "getRecord: "+myUser.repr());
         }else {
@@ -62,11 +63,27 @@ public class BorrowHistoryActivity extends AppCompatActivity {
             public void done(List<Book> list, BmobException e) {
                 if (e == null) {
                     hbList.clear();
-                    hbList.addAll(list);
+                    try {
+                        for (Book b : list) {
+                            if (b.getNow_user() != null && b.getNow_user().getObjectId().equals(myUser.getObjectId())) {
+                                hbList.add(b);
+                            }
+                        }
+
+                        for (Book b : list) {
+                            if (b.getNow_user() == null
+                                    || !b.getNow_user().getObjectId().equals(myUser.getObjectId())) {
+                                hbList.add(b);
+                            }
+                        }
+                    } catch (NullPointerException e1) {
+                        e1.printStackTrace();
+                    }
                     Log.d("history", Integer.toString(hbList.size()));
                     historyAdapter.notifyDataSetChanged();
                 } else {
                     Log.d("history", "fail");
+                    Log.d("history", e.getMessage());
                 }
             }
         });

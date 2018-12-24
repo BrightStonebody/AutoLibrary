@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:2:1-66:12
-INJECTED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:2:1-66:12
-INJECTED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:2:1-66:12
-INJECTED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:2:1-66:12
+ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:2:1-64:12
 MERGED from [com.android.support:design:25.4.0] /home/chenlei/.gradle/caches/transforms-1/files-1.1/design-25.4.0.aar/2924c4f0434652a20b7534daa28107d6/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:25.4.0] /home/chenlei/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/bc3440eb0c29f026530d4c276375bd9d/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/chenlei/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/73b485af438014f9bec2cc7c609c535b/AndroidManifest.xml:2:1-11:12
@@ -25,20 +25,20 @@ MERGED from [com.android.support:support-core-ui:25.4.0] /home/chenlei/.gradle/c
 MERGED from [com.android.support:support-compat:25.4.0] /home/chenlei/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/84d1e562877183f7c4545c9cc4c4ea53/AndroidManifest.xml:17:1-31:12
 MERGED from [cn.bingoogolapple:bga-qrcode-core:1.3.4] /home/chenlei/.gradle/caches/transforms-1/files-1.1/bga-qrcode-core-1.3.4.aar/245941f6920c5b68c3974aa283e2a262/AndroidManifest.xml:2:1-19:12
 MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /home/chenlei/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.8.0.aar/2d4885014da2e4a993dfb9e22f5ae642/AndroidManifest.xml:2:1-11:12
-INJECTED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:2:1-66:12
-INJECTED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:2:1-66:12
-INJECTED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:2:1-66:12
+INJECTED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:2:1-64:12
 	package
 		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:3:5-41
 		INJECTED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml
 		INJECTED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml
-		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:2:1-66:12
+		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:2:1-64:12
 		INJECTED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml
-		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:2:1-66:12
+		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:2:1-64:12
 		INJECTED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:2:11-69
@@ -67,7 +67,7 @@ ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidMan
 	android:name
 		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:15:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:16:5-79
+ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:16:5-80
 	android:name
 		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:16:22-77
 uses-permission#android.permission.READ_PHONE_STATE
@@ -89,7 +89,7 @@ ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidMan
 	android:name
 		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:23:22-73
 application
-ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:25:5-64:19
+ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:25:5-62:19
 MERGED from [com.android.support:design:25.4.0] /home/chenlei/.gradle/caches/transforms-1/files-1.1/design-25.4.0.aar/2924c4f0434652a20b7534daa28107d6/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:25.4.0] /home/chenlei/.gradle/caches/transforms-1/files-1.1/design-25.4.0.aar/2924c4f0434652a20b7534daa28107d6/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:25.4.0] /home/chenlei/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/bc3440eb0c29f026530d4c276375bd9d/AndroidManifest.xml:25:5-29:19
@@ -143,63 +143,67 @@ ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidMan
 	android:name
 		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:35:13-50
 activity#com.hsm.zzh.cl.autolibrary.activity.MainActivity
-ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:38:9-43:20
+ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:38:9-41:56
 	android:launchMode
-		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:41:13-44
-	android:theme
 		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:40:13-44
+	android:theme
+		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:41:13-44
 	android:name
 		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:39:13-50
 activity#com.hsm.zzh.cl.autolibrary.activity.ScannerActivity
-ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:44:9-62
+ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:42:9-62
 	android:name
-		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:44:19-59
+		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:42:19-59
 activity#com.hsm.zzh.cl.autolibrary.activity.BookListActivity
-ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:45:9-63
+ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:43:9-63
 	android:name
-		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:45:19-60
+		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:43:19-60
 activity#com.hsm.zzh.cl.autolibrary.activity.BookInfoActivity
-ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:46:9-63
+ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:44:9-63
 	android:name
-		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:46:19-60
+		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:44:19-60
 activity#com.hsm.zzh.cl.autolibrary.activity.BorrowHistoryActivity
-ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:47:9-68
+ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:45:9-68
 	android:name
-		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:47:19-65
+		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:45:19-65
 activity#com.hsm.zzh.cl.autolibrary.activity.ChangeInfoActivity
-ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:48:9-65
+ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:46:9-65
 	android:name
-		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:48:19-62
+		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:46:19-62
 activity#com.hsm.zzh.cl.autolibrary.activity.LoginActivity
-ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:49:9-51:34
+ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:47:9-49:34
 	android:label
-		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:51:13-31
+		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:49:13-31
 	android:name
-		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:50:13-51
+		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:48:13-51
 activity#com.hsm.zzh.cl.autolibrary.activity.RegisterActivity
-ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:52:9-54:34
+ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:50:9-52:34
 	android:label
-		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:54:13-31
+		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:52:13-31
 	android:name
-		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:53:13-54
+		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:51:13-54
 activity#com.hsm.zzh.cl.autolibrary.activity.SearchActivity
-ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:55:9-61
+ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:53:9-61
 	android:name
-		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:55:19-58
+		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:53:19-58
 activity#com.hsm.zzh.cl.autolibrary.activity.SplashActivity
-ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:57:9-63:20
+ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:54:9-60:20
 	android:name
-		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:57:19-58
+		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:54:19-58
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:58:13-62:29
+ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:55:13-59:29
 action#android.intent.action.MAIN
-ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:59:17-69
+ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:56:17-69
 	android:name
-		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:59:25-66
+		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:56:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:61:17-77
+ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:58:17-77
 	android:name
-		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:61:27-74
+		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:58:27-74
+activity#com.hsm.zzh.cl.autolibrary.activity.BookLocationActivity
+ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:61:9-76
+	android:name
+		ADDED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml:61:19-64
 uses-sdk
 INJECTED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/AndroidManifest.xml

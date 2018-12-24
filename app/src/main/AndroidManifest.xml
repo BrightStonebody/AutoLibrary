@@ -13,7 +13,7 @@
     <!-- 允许程序设置内置sd卡的写权限 -->
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <!-- 允许程序读写手机状态和身份 -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
@@ -37,10 +37,8 @@
 
         <activity
             android:name=".activity.MainActivity"
-            android:theme="@style/AppTheme"
-            android:launchMode="singleTask">
-
-        </activity>
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"></activity>
         <activity android:name=".activity.ScannerActivity" />
         <activity android:name=".activity.BookListActivity" />
         <activity android:name=".activity.BookInfoActivity" />
@@ -53,7 +51,6 @@
             android:name=".activity.RegisterActivity"
             android:label="注册" />
         <activity android:name=".activity.SearchActivity" />
-
         <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -61,6 +58,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.BookLocationActivity"></activity>
     </application>
 
 </manifest>

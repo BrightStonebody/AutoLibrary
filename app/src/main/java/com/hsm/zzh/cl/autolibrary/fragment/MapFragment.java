@@ -56,6 +56,8 @@ public class MapFragment extends Fragment implements View.OnClickListener {
     private Map<Marker, String> markerToId = new HashMap<>();
 
     private SharedPreferences sp;
+    private MyOnMarkerClickListener myOnMarkerClickListener=null;
+    private MineOnMyLocationChangeListener mineOnMyLocationChangeListener=null;
 
 
     @Nullable
@@ -81,7 +83,6 @@ public class MapFragment extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.search_view: {
-                // TODO: 18-12-7
                 Intent intent = new Intent(getContext(), SearchActivity.class);
                 startActivity(intent);
                 break;
@@ -89,28 +90,21 @@ public class MapFragment extends Fragment implements View.OnClickListener {
         }
     }
 
+    public interface MyOnMarkerClickListener{
+        void onMarkerClickListener(Marker marker, String objectId);
+    }
 
-    public void getMachinesByLocation() {
-        BmobGeoPoint point = new BmobGeoPoint(mLocation.getLongitude(), mLocation.getLatitude());
-        MachineOperation.get_machines_by_location(point, 10.0,
-                new FindListener<Machine>() {
-                    @Override
-                    public void done(final List<Machine> list, BmobException e) {
-                        if (e != null) {
-                            Log.e("错误", "done: " + "获取附近机器信息失败");
-                            Toast.makeText(getContext(), "获取信息失败", Toast.LENGTH_SHORT)
-                                    .show();
-                            return;
-                        }
-                        Log.i("machine", "done: " + list.toString());
-                        getActivity().runOnUiThread(new Runnable() {
-                            @Override
-                            public void run() {
-                                setMarks(list, R.drawable.books);
-                            }
-                        });
-                    }
-                });
+
+    public interface MineOnMyLocationChangeListener{
+        void onMyLocationChangeListener(Location location);
+    }
+
+    public void setMyOnMarkerClickListener(MyOnMarkerClickListener onMarkerClickListener){
+        this.myOnMarkerClickListener = onMarkerClickListener;
+    }
+
+    public void setMineOnMyLocationChangeListener(MineOnMyLocationChangeListener mineOnMyLocationChangeListener){
+        this.mineOnMyLocationChangeListener = mineOnMyLocationChangeListener;
     }
 
     public void setMarks(List<Machine> machines, int image) {
@@ -151,24 +145,16 @@ public class MapFragment extends Fragment implements View.OnClickListener {
                 editor.putString("location_longitude", "" + location.getLongitude());
                 editor.putString("location_latitude", "" + location.getLatitude());
                 editor.apply();
-                getMachinesByLocation();
+                if(mineOnMyLocationChangeListener != null)
+                    mineOnMyLocationChangeListener.onMyLocationChangeListener(location);
             }
         });
 
         aMap.setOnMarkerClickListener(new AMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
-                // todo 设置机器图片的点击事件
-                aMap.setOnMarkerClickListener(new AMap.OnMarkerClickListener() {
-                    @Override
-                    public boolean onMarkerClick(Marker marker) {
-                        Intent intent = new Intent(getActivity(), BookListActivity.class);
-                        intent.putExtra("machine_id", markerToId.get(marker) + "");
-                        Log.i("标记", "onMarkerClick: " + markerToId.get(marker));
-                        startActivity(intent);
-                        return true;
-                    }
-                });
+                if(myOnMarkerClickListener != null)
+                    myOnMarkerClickListener.onMarkerClickListener(marker, markerToId.get(marker));
                 return true;
             }
         });
@@ -178,35 +164,20 @@ public class MapFragment extends Fragment implements View.OnClickListener {
         uiSettings.setMyLocationButtonEnabled(false);
     }
 
-    public void addFindBookLocation(Book book) {
+    public void addFindBookLocation(List<Machine> machines) {
+        viewSearch.setVisibility(View.GONE);
         if (getMyActivity() == null) {
-            Log.e("错误", "mapfragment get activity is null: ");
+            Log.e("错误", "MapFragment addFindBookLocation: mapFragment get activity is null: ");
             return;
         }
-        final Machine machine = book.getNow_machine();
-        Log.i("test", "addFindBookLocation: " + machine.getObjectId());
-        MachineOperation.get_machines_by_book(book, new FindListener<Machine>() {
-            @Override
-            public void done(final List<Machine> list, BmobException e) {
-                getMyActivity().runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        if (list.size() == 0) {
-                            Log.e("错误", "run: from book find machine,but list size is 0");
-                            Toast.makeText(mActivity, "出现未知错误", Toast.LENGTH_SHORT).show();
-                            return;
-                        }
 
-                        setMarks(list, R.drawable.locate);
-                        CameraUpdate mCameraUpdate = CameraUpdateFactory.newCameraPosition(
-                                new CameraPosition(
-                                        new LatLng(list.get(0).getLocation().getLatitude(), list.get(0).getLocation().getLongitude()),
-                                        15, 0, 0));
-                        aMap.animateCamera(mCameraUpdate, 1000, null);
-                    }
-                });
-            }
-        });
+        setMarks(machines, R.drawable.books);
+        setMarks(machines, R.drawable.locate);
+        CameraUpdate mCameraUpdate = CameraUpdateFactory.newCameraPosition(
+                new CameraPosition(
+                        new LatLng(machines.get(0).getLocation().getLatitude(), machines.get(0).getLocation().getLongitude()),
+                        15, 0, 0));
+        aMap.animateCamera(mCameraUpdate, 1000, null);
 
     }
 

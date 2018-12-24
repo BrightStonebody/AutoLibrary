@@ -47,13 +47,13 @@ public final class R {
         public static final int fit_start = 0x7f080067;
         public static final int fit_xy = 0x7f080068;
         public static final int indicatorInside = 0x7f08007b;
-        public static final int matrix = 0x7f080093;
-        public static final int numIndicator = 0x7f0800a4;
-        public static final int numIndicatorInside = 0x7f0800a5;
-        public static final int titleView = 0x7f0800f6;
+        public static final int matrix = 0x7f080094;
+        public static final int numIndicator = 0x7f0800a5;
+        public static final int numIndicatorInside = 0x7f0800a6;
+        public static final int titleView = 0x7f0800f7;
     }
     public static final class layout {
-        public static final int banner = 0x7f0a0025;
+        public static final int banner = 0x7f0a0026;
     }
     public static final class styleable {
         public static final int[] Banner = { 0x7f030030, 0x7f030031, 0x7f030079, 0x7f0300a5, 0x7f0300a7, 0x7f0300a8, 0x7f0300a9, 0x7f0300aa, 0x7f0300ab, 0x7f0300af, 0x7f03014a, 0x7f0301a0, 0x7f0301a1, 0x7f0301a2, 0x7f0301a3 };

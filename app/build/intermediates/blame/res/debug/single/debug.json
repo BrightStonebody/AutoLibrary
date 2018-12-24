@@ -12,6 +12,10 @@
         "source": "/home/chenlei/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/bc3440eb0c29f026530d4c276375bd9d/res/drawable/abc_cab_background_internal_bg.xml"
     },
     {
+        "merged": "/home/chenlei/code/android/GitHub/AutoLibrary/app/build/intermediates/res/merged/debug/layout_activity_book_location.xml.flat",
+        "source": "/home/chenlei/code/android/GitHub/AutoLibrary/app/src/main/res/layout/activity/layout/activity_book_location.xml"
+    },
+    {
         "merged": "/home/chenlei/code/android/GitHub/AutoLibrary/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
         "source": "/home/chenlei/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/bc3440eb0c29f026530d4c276375bd9d/res/drawable-xxxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
     },

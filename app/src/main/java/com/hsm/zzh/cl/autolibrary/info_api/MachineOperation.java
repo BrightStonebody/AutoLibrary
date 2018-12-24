@@ -1,5 +1,7 @@
 package com.hsm.zzh.cl.autolibrary.info_api;
 
+import android.util.Log;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -65,7 +67,7 @@ public class MachineOperation {
     public static void get_machines_by_book(Book book, FindListener<Machine> findListener) {
 
         BmobQuery<Machine> query = new BmobQuery<>();
-        query.addWhereEqualTo("objectid", book.getNow_machine().getObjectId());
+        query.addWhereEqualTo("objectId", book.getNow_machine().getObjectId());
         query.setCachePolicy(BmobQuery.CachePolicy.NETWORK_ELSE_CACHE);
         query.findObjects(findListener);
     }

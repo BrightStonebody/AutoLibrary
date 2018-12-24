@@ -54,8 +54,7 @@
         <activity
             android:name="com.hsm.zzh.cl.autolibrary.activity.MainActivity"
             android:launchMode="singleTask"
-            android:theme="@style/AppTheme" >
-        </activity>
+            android:theme="@style/AppTheme" />
         <activity android:name="com.hsm.zzh.cl.autolibrary.activity.ScannerActivity" />
         <activity android:name="com.hsm.zzh.cl.autolibrary.activity.BookListActivity" />
         <activity android:name="com.hsm.zzh.cl.autolibrary.activity.BookInfoActivity" />
@@ -75,6 +74,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.hsm.zzh.cl.autolibrary.activity.BookLocationActivity" />
 
         <meta-data
             android:name="android.support.VERSION"

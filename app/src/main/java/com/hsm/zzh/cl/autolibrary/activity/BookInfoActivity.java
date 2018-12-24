@@ -95,11 +95,12 @@ public class BookInfoActivity extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.info_borrow:
                 // TODO: 18-12-18
-                if(!BmobUser.isLogin()){
-                    return ;
-                }
+//                if(!BmobUser.isLogin()){
+//                    return ;
+//                }
 
-                Intent intent = new Intent(this, ScannerActivity.class);
+                Intent intent = new Intent(this, BookLocationActivity.class);
+                intent.putExtra("book", book);
                 startActivity(intent);
                 break;
             default:
